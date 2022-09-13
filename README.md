@@ -178,3 +178,6 @@ dfx canister call my_counter get
 2. 通过运行以下命令停止本地容器执行环境：
 
 dfx stop
+
+# call 调用
+1. dfx canister call my_counter_backend http_request '(record {body = blob ""; headers = vec {}; method = "GET"; url = "/"})'
